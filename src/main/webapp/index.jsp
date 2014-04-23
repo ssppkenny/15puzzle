@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<form method="post" action="/myapp/gameservlet">
+<form method="post" action="${pageContext.request.contextPath}/gameservlet">
 <div align="center">
 <input name="b1" type="submit" class="mybutton" value="<%= session.getAttribute("b1") != null ? session.getAttribute("b1") : "1"  %>">
 <input name="b2" type="submit" class="mybutton" value="<%= session.getAttribute("b2") != null ? session.getAttribute("b2") : "2"  %>">
